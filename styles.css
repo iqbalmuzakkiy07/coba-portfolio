@@ -1,0 +1,125 @@
+:root {
+    --primary: #4F46E5;
+    --secondary: #22C55E;
+    --bg: #F9FAFB;
+    --text-dark: #111827;
+    --text-light: #6B7280;
+    --card-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: transparent;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+}
+
+.header-left {
+    width: 35%;
+    min-height: 120px;
+    background: linear-gradient(135deg, #4F46E5, #adaeff);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.header-right {
+    width: 65%;
+    min-height: 120px;
+    background: linear-gradient(135deg, #7bf8a9, #16A34A);
+}
+
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 3rem 0 6rem;
+    padding-bottom: 50px;
+}
+
+/* Section */
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    border-left: 5px solid var(--secondary);
+    padding-left: 10px;
+}
+
+/* Card */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin: 1.2rem 0;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.card p {
+    color: var(--text-light);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.card img:hover {
+    filter: grayscale(0%);
+}
+
+/* Contact */
+section p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 6px 0;
+    background: #111827;
+    color: #E5E7EB;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
